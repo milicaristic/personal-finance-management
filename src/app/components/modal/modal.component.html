@@ -1,0 +1,18 @@
+<h1 class="title">
+    Add Category
+</h1>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Categories</mat-label>
+    
+    <mat-select  [(ngModel)]="selectedCategory" matNativeControl required>
+      <mat-option *ngFor="let cat of data.categories" [value]="cat">{{cat.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button (click)="onClick()" mat-raised-button>Add</button>
+  <button mat-button >Cancel</button>
+
+
+
+  

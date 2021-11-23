@@ -1,0 +1,35 @@
+<div class="header">
+    <div class="sides">
+      <p class="title">Personal Finance Management</p>
+      <button class="meni" mat-button [matMenuTriggerFor]="menu">Filter by kind</button>
+        <mat-menu #menu="matMenu">
+            <button class= "pmt" mat-menu-item (click)="changeFilter('pmt')">pmt</button>
+            <button class= "dep" mat-menu-item (click)="changeFilter('dep')">dep</button>
+            <button class= "fee" mat-menu-item (click)="changeFilter('fee')">fee</button>
+            <button class= "sal" mat-menu-item (click)="changeFilter('sal')">sal</button>
+            <button class= "wdw" mat-menu-item (click)="changeFilter('wdw')">wdw</button>
+            <button class= "wdw" mat-menu-item (click)="changeFilter('all')">all</button>
+        </mat-menu>
+    </div>
+
+    
+    
+    <!--<div class="sides"> <a href="#" class="menu"> </a></div>-->
+    <div class="info">
+    <h1 class="balance blue">
+        {{sum}} {{currency}}
+        
+        
+    </h1>
+        <div class="meta">
+            <a  href="" target="_b" class="img"></a><br>
+        </div>
+        <h1 class="name">Milica Ristic</h1>
+      <h4 class="acc">
+          12345 6789 8765
+        </h4>
+    </div>
+</div>
+
+  
+

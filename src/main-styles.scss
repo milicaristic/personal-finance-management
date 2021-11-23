@@ -1,0 +1,38 @@
+//global styles
+
+@charset "utf-8";
+
+// Import a Google Font
+//@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Lato: 300,900');
+//@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@200;300;400;500&display=swap');
+
+// Main colors
+$blue-dark: rgb(21,27,41);
+$blue-light: rgb(92,198,217);
+$blue: rgb(52,73,190);
+
+$purple-light: rgb(175,79,153);
+$grey: #5E5D5C;
+
+$pink: rgb(223,85,88);
+$dark-pink: rgb(190,0,48);
+ 
+$green: #00cc86;
+$green-light: #bafacd;
+$red: #dc3900;
+$red-light: #ffe5e3;
+
+// Update Bulma's global variables
+$family-sans-serif: "M+PLUS+2", sans-serif;
+
+$primary: $blue-dark;
+$link: $blue;
+
+// Update some of Bulma's component variables
+$body-background-color: white;
+$control-border-width: 2px;
+$input-border-color: $blue-light;
+$input-shadow: none;
+
+

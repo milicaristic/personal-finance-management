@@ -1,0 +1,40 @@
+<div class="transaction"
+    *ngIf="filter=='all' || transaction.kind==filter">  
+
+    
+<div class="wrap">
+    <div class="id">{{transaction.id}}</div>
+    <div class="example-section">
+
+        <mat-checkbox   
+        class="example-margin" 
+        (change)="checked()"
+        [disabled]="checkbox" 
+        [checked]="transaction.isselected"
+        ></mat-checkbox>
+        
+    </div>
+</div>
+    
+
+    <div class="wrap about">
+        <h3 class="name">{{transaction.beneficiaryName}}</h3>
+        <p class="date">{{transaction.date}}</p>
+        <div class="add-category" *ngIf='transaction.category==null; else elseBlock'>Add Category</div>
+        <ng-template  #elseBlock> <div class="category">{{transaction.category.name}}</div> </ng-template>
+    </div>
+    <mat-chip-list>
+         <mat-chip class="split-marker">Split Transaction</mat-chip>
+    </mat-chip-list>
+    <div class="wrap cash">
+        <div class="amount">
+            <span class="plus" *ngIf='transaction.direction=="d"; else elseBlock2'>+</span>
+            <ng-template  #elseBlock2 ><span class="minus">-</span></ng-template>{{transaction.amount}}
+        </div>
+        <p class="currency">{{transaction.currency}}</p>
+        <p class="kind">{{transaction.kind}}</p>
+    </div>
+
+
+</div>
+

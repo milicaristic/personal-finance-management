@@ -1,0 +1,137 @@
+@import '../../../main-styles.scss';
+
+
+
+.transaction{
+    //background: rgb(246, 250, 253);
+    padding:0px;
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgb(204, 208, 230);
+    .id{
+        //flex-grow: 1;
+        //position: absolute;
+        height: 19px;
+        width: 100px;
+        //background: $blue;
+        color:$blue-light ;
+        font-size: 15px;
+        left:0;
+        top:0;
+        //padding-left: 3px;
+        padding-bottom: 36px;
+    }
+
+    .example-section{
+        padding-top: 13px;
+        padding-left: 23px;
+    }
+
+    .name,.amount, .currency{
+        color: lighten($color: $blue, $amount: 15%);
+    }
+    .name{
+        font-size: 20px;
+    }
+    .date{
+        color:$grey;
+        font-size: 13px;
+    }
+    .category, .split-marker, .kind{
+        color:$pink;
+    }
+    .add-category{
+        padding: 2px;
+        padding-left: 5px;
+        font-size: 11px;
+        background-color: $pink;
+        color: white;
+        width: 80px;
+       border-radius: 5%;
+
+       &:hover{
+           cursor: pointer;
+       }
+    }
+    .category{
+        padding: 2px;
+        padding-left: 5px;
+        font-size: 11px;
+        background-color: $pink;
+        color: white;
+        width: 80px;
+       border-radius: 5%;
+    }
+    .direction{
+        color: $green;
+        padding: 2px;
+    }
+    .about{ 
+        flex-grow: 1;
+        padding-left:0px ;
+    }
+
+    .wrap{
+        flex-direction: column;
+        //flex-grow: 2;
+    }
+    .cash{
+        //flex-grow: 2;
+        width: 200px;
+        left:0;
+        justify-content: right;
+        text-align: right;
+    }
+    .split-marker{
+        //flex-grow: 2;
+        
+        padding-top: 6px;
+        padding: 2px;
+        padding-left: 5px;
+        font-size: 11px;
+        background-color: $pink;
+        color: white;
+        width: 80px;
+       border-radius: 5%;
+        position: absolute;
+        bottom: 0;
+        align-self: flex-end;
+        //padding-left: 30px;
+
+        
+    }
+    .amount{
+        font-size: 20px;
+    }
+    .currency{
+        font-size: 13px;
+    }
+    .kind{
+        font-size: 11px;
+    }
+}
+
+
+
+:hover{
+    background:  rgb(204, 208, 230);
+}
+
+.transaction h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category, .split-marker:hover{
+    cursor: pointer;
+}
+
+.plus{
+    color: $green;
+}
+.minus{
+    color: $red;
+}

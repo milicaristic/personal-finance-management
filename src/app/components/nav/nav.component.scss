@@ -1,0 +1,42 @@
+@import '../../../main-styles.scss';
+
+.navbar{
+    background-color: $blue-light;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    padding:0;
+    margin: 0;
+
+}
+
+.wrap{
+
+    flex-grow: 2;
+    padding-left: 10%;
+    padding-bottom: 0;
+}
+
+.sel,.add,.view{
+    
+    padding-top: 14px;
+    
+    color: white;
+    padding-bottom: 3%;
+     &:hover{
+         cursor: pointer;
+         color: rgb(93, 132, 145);
+     }
+}
+
+.btn-open{
+    color: white;
+    padding-bottom: 3%;
+    background-color: $blue-light;
+    border: none;
+     &:hover{
+         cursor: pointer;
+         color: rgb(93, 132, 145);
+     }
+     
+}

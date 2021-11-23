@@ -1,0 +1,6 @@
+
+<app-header (filterToSend)="receiveFilter($event)" [sum]="sum" [currency]="currency"></app-header>
+<app-nav (selectEvent)="receiveCheckbox($event)"  [checkedTransactions]="checkedTransactions" [categories]="categories"></app-nav>
+
+<app-transaction *ngFor="let transaction of transactions" [transaction]="transaction" [categories]="categories" [filter]="filter" [checkbox]="checkbox" (onCheckedEvent)="onChecked($event)"></app-transaction>
+
